@@ -1,0 +1,9 @@
+../Core/Src/MPU_6050.c:14:6:MPU_6050_Who_am_I	1
+../Core/Src/MPU_6050.c:18:6:MPU_6050_Init	2
+../Core/Src/MPU_6050.c:38:9:MPU_6050_Temp_Read	1
+../Core/Src/MPU_6050.c:46:6:MPU_6050_Accelerometer_Read	1
+../Core/Src/MPU_6050.c:63:6:MPU_6050_Angle	1
+../Core/Src/MPU_6050.c:80:6:MPU_6050_Gyroscope_Read	1
+../Core/Src/MPU_6050.c:98:6:MPU_6050_Gyroscope_Cali	2
+../Core/Src/MPU_6050.c:109:6:Kalman_1d	1
+../Core/Src/MPU_6050.c:120:6:Kalman_X_Angle	1
