@@ -15,7 +15,7 @@ void MPU_6050_Who_am_I(){
 	uint8_t Data[1];
 	HAL_I2C_Mem_Read(&hi2c1, MPU6050_I2C_ADRESS_AD0, MPU_REG_WHO_AM_I, 1, &Data, 1, 100);
 }
-void MPU_6050_Init(){
+uint8_t MPU_6050_Init(){
 	uint8_t check;
 	uint8_t Data;
 
@@ -33,6 +33,10 @@ void MPU_6050_Init(){
 		Data=0;
 		Data |= (3 << 3);// 16g
 		HAL_I2C_Mem_Write(&hi2c1, MPU6050_I2C_ADRESS_AD0, MPU_REG_ACCEL_CONFIG, 1, &Data, 1, 100);
+		return 1;
+	}
+	else {
+		return 0;
 	}
 }
 int16_t MPU_6050_Temp_Read(){
