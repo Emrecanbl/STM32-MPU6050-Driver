@@ -71,7 +71,7 @@ typedef struct {
 }Kalman_t;
 
 void MPU_6050_Who_am_I();
-void MPU_6050_Init();
+uint8_t MPU_6050_Init();
 int16_t MPU_6050_Temp_Read();
 void MPU_6050_Accelerometer_Read(SensorData_t *SensorData);
 void MPU_6050_Angle(SensorData_t *SensorData);
